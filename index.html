@@ -34,22 +34,46 @@
     </ul>
   </aside>
 
-<section>
-  <h2>Working with GeoLocation</h2>
-  <p> If this does not work in Google Chrome, try to run it one Mozilla firefox</p>
+<article style="overflow:auto;">
 
+  <section style="float:left; width: 60%">
+    <h2>Working with GeoLocation</h2>
+    <p> If this does not work in Google Chrome, try to run it one Mozilla firefox</p>
   
 
-  <form id="geolocation-form" method="post" action="#" onSubmit = "return false">
-    <input type="button" id="init-map" value="Show my location!"/> or 
-    <input type="text" id="location-box" value/>
-    <input type="button" id="update-map" value="Search Region"/>
-    
-    <div id="google-map">Please click on the button to display the map</div>
-    
+    <form id="geolocation-form" method="post" action="#" onSubmit = "return false">
+      <input type="button" id="init-map" value="Show my location!"/> or 
+      <input type="text" id="location-box" />
+      <input type="button" id="update-map" value="Search Region"/>
+      <gcse:searchbox></gcse:searchbox>
+      
+      <div id="google-map">Please click on the button to display the map</div>
+      
+      
+    </form>
+  </section>
 
-  </form>
-</section>
+  <section style="float:right; width: 35%">
+    <gcse:searchresults></gcse:searchresults>
+    
+  </section>
+
+</article>
+
+
+<script>
+  (function() {
+    var cx = '014114630504681930971:x0-xac_vjks';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
 
 
 <!-- This part of the code is taken from http://www.eurecom.fr/~troncy/teaching/webint2014/geo-demo.html -->
