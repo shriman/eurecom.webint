@@ -1,60 +1,4 @@
-
-<!DOCTYPE html>
-  
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
-  <title> search page for the region </title>
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <script type="text/javascript" src="search.js"></script>
-  <script type="text/javascript" src="map.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-</head>
-
-<body>
-  <header><h1>Hello Welcome to The WebInt Assignment</h1></header>
-  <center> <h3>Submitted by : Shriman Narayan Tiwari</h3> </center>
-
-  <nav> 
-    <ul>
-      <li><a href="index.html"> Home</a></li>
-      <li><a href="form.html"> Form</a> </li>
-      <li><a href="geolocation.html"> Geolocation</a></li>
-      <li><a href="video.html"> Video</a> </li>
-      <li><a href="about.html"> About</a></li>
-    </ul>
-  </nav>
-  
-  <aside>
-    <h2>Contents</h2>
-    <ul>
-    <li> <a href="form.html"> Form</a> </li>
-    <li> <a href="geolocation.html"> Geo-Location</a> </li>
-    <li> <a href="video.html"> Video</a></li>
-    </ul>
-  </aside>
-
-<section>
-  <h2>Working with GeoLocation</h2>
-  <p> If this does not work in Google Chrome, try to run it one Mozilla firefox</p>
-
-  
-
-  <form id="geolocation-form" method="post" action="#" onSubmit = "return false">
-    <input type="button" id="init-map" value="Show my location!"/> or 
-    <input type="text" id="location-box" value/>
-    <input type="button" id="update-map" value="Search Region"/>
-    
-    <div id="google-map">Please click on the button to display the map</div>
-    
-
-  </form>
-</section>
-
-
-<!-- This part of the code is taken from http://www.eurecom.fr/~troncy/teaching/webint2014/geo-demo.html -->
-<!--here goes the JS, let's go -->  
-<script type="text/javascript"
+ <script type="text/javascript"
   src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 <script>
@@ -121,12 +65,3 @@
       document.getElementById('geolocation-form').addEventListener('submit',function(){return false;},true);
 
 </script>
-
-
-
-<footer>
-  <p>&copy; NONE</p>
-</footer>
-
-</body>
-
