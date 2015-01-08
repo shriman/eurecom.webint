@@ -1,0 +1,10 @@
+h1
+{
+	font-family: "Arial";
+}
+
+body 
+{
+ background-image: url("poster.jpg"); 
+ background-size: cover;
+ }
